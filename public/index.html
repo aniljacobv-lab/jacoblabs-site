@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jacob Labs — independent software, built end to end</title>
+<meta name="description" content="Jacob Labs designs, builds, and ships working software end to end — Centauri (a SQL engine in Go), SparkTakeoff, Signal Forge, and Deck Forge. No slideware. Things you can actually run." />
+<meta name="author" content="Jacob Labs · Johan Jacob" />
+<meta name="theme-color" content="#080b12" />
+<link rel="canonical" href="https://jacoblabs-site.web.app/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Jacob Labs" />
+<meta property="og:title" content="Jacob Labs — independent software, built end to end" />
+<meta property="og:description" content="A small team building working products — from a database engine to AI tools for the trades. No slideware." />
+<meta property="og:url" content="https://jacoblabs-site.web.app/" />
+<meta property="og:image" content="https://jacoblabs-site.web.app/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Jacob Labs — independent software, built end to end" />
+<meta name="twitter:description" content="A small team building working products — from a database engine to AI tools for the trades." />
+<meta name="twitter:image" content="https://jacoblabs-site.web.app/og-image.png" />
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/favicon.svg" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/styles.css" />
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Jacob Labs",
+  "url": "https://jacoblabs-site.web.app/",
+  "logo": "https://jacoblabs-site.web.app/favicon.svg",
+  "description": "Independent software studio building working products end to end.",
+  "founder": { "@type": "Person", "name": "Johan Jacob" },
+  "email": "aniljacobv@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Houston", "addressRegion": "TX", "addressCountry": "US" },
+  "sameAs": ["https://github.com/aniljacobv-lab"]
+}
+</script>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="mark" href="#top">
+      <svg class="orb" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="2.4" fill="#f2b45c"/>
+        <ellipse cx="12" cy="12" rx="10" ry="4.4" stroke="#f2b45c" stroke-opacity="0.45" transform="rotate(28 12 12)"/>
+        <circle cx="20.4" cy="8.6" r="1.3" fill="#f2b45c"/>
+      </svg>
+      JACOB LABS
+    </a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#products">products</a>
+        <a href="#about">about</a>
+        <a href="#updates">updates</a>
+        <a href="#contact">contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light / dark theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="starfield" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1200 600">
+    <g stroke="#222a3a" fill="none" opacity="0.5">
+      <ellipse cx="880" cy="180" rx="260" ry="100" transform="rotate(-18 880 180)"/>
+      <ellipse cx="880" cy="180" rx="170" ry="64" transform="rotate(-18 880 180)"/>
+      <ellipse cx="880" cy="180" rx="90" ry="34" transform="rotate(-18 880 180)"/>
+    </g>
+    <g style="transform-origin:880px 180px;animation:orbit 38s linear infinite">
+      <circle cx="1140" cy="180" r="3" fill="#f2b45c"/>
+    </g>
+    <g style="transform-origin:880px 180px;animation:orbit 22s linear infinite reverse">
+      <circle cx="1050" cy="180" r="2" fill="#5fd0e0"/>
+    </g>
+    <circle cx="880" cy="180" r="4.5" fill="#f2b45c"/>
+    <g fill="#c5cfda">
+      <circle cx="140" cy="90" r="1" style="animation:twinkle 4s ease-in-out infinite"/>
+      <circle cx="320" cy="220" r="1.3" style="animation:twinkle 6s ease-in-out infinite .5s"/>
+      <circle cx="520" cy="120" r="1" style="animation:twinkle 5s ease-in-out infinite 1s"/>
+      <circle cx="240" cy="400" r="1.2" style="animation:twinkle 7s ease-in-out infinite"/>
+      <circle cx="700" cy="380" r="1" style="animation:twinkle 4.5s ease-in-out infinite 1.5s"/>
+      <circle cx="1080" cy="430" r="1.3" style="animation:twinkle 6s ease-in-out infinite .8s"/>
+      <circle cx="60" cy="300" r="1" style="animation:twinkle 5.5s ease-in-out infinite"/>
+    </g>
+  </svg>
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Independent software · a small team</div>
+    <h1>Tools, built<br/>end&nbsp;to&nbsp;<span class="accent">end.</span></h1>
+    <p class="lede">Jacob Labs designs, builds, and ships working products — from a database engine to AI tools for the trades. No slideware. Things you can actually run.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#products">View the products</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="num">4</div><div class="lbl">Products shipping</div></div>
+      <div class="stat"><div class="num">3</div><div class="lbl">Live in production</div></div>
+      <div class="stat"><div class="num">Go · React</div><div class="lbl">Core stack</div></div>
+      <div class="stat"><div class="num">OSS</div><div class="lbl">Built in the open</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="products">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-title">Products</div>
+        <div class="sec-count">04 / SHIPPING</div>
+      </div>
+
+      <div class="grid">
+
+        <!-- 01 Centauri -->
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="cat-no">JL—01</span>
+            <span class="status build"><span class="dot"></span>OPEN SOURCE</span>
+          </div>
+          <h3>Centauri</h3>
+          <p>A SQL database engine written from scratch in Go, with its own query language — CeQL. Built in the open, GitHub-first.</p>
+          <div class="tags"><span class="tag">Go</span><span class="tag">CeQL</span><span class="tag">SQL engine</span><span class="tag">OSS</span></div>
+          <div class="card-links">
+            <a class="card-link" href="/centauri">Details <span class="arr">→</span></a>
+            <a class="card-link subtle" href="https://github.com/aniljacobv-lab/centauri" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
+          </div>
+        </article>
+
+        <!-- 02 SparkTakeoff -->
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="cat-no">JL—02</span>
+            <span class="status live"><span class="dot"></span>LIVE · BETA</span>
+          </div>
+          <h3>SparkTakeoff</h3>
+          <p>AI-assisted electrical estimating. Upload a plan set, auto-detect components, and price the job against NEC 2023 — right in the browser.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">PWA</span><span class="tag">Firebase</span><span class="tag">NEC 2023</span></div>
+          <div class="card-links">
+            <a class="card-link" href="/sparktakeoff">Details <span class="arr">→</span></a>
+            <a class="card-link subtle" href="https://sparktakeoff-anil.web.app" target="_blank" rel="noopener">Open app <span class="arr">↗</span></a>
+          </div>
+        </article>
+
+        <!-- 03 Signal Forge -->
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="cat-no">JL—03</span>
+            <span class="status live"><span class="dot"></span>LIVE</span>
+          </div>
+          <h3>Signal Forge</h3>
+          <p>One place for WhatsApp messages, email, and voice notes — pulled together and turned into a single, actionable task list.</p>
+          <div class="tags"><span class="tag">Firebase</span><span class="tag">Whisper</span><span class="tag">Firestore</span><span class="tag">PWA</span></div>
+          <div class="card-links">
+            <a class="card-link" href="/signal-forge">Details <span class="arr">→</span></a>
+            <a class="card-link subtle" href="https://signal-forge.web.app" target="_blank" rel="noopener">Open app <span class="arr">↗</span></a>
+          </div>
+        </article>
+
+        <!-- 04 Deck Forge -->
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="cat-no">JL—04</span>
+            <span class="status live"><span class="dot"></span>LIVE</span>
+          </div>
+          <h3>Deck Forge</h3>
+          <p>Describe the deck you need, pick how deep to go, and generate a sourced presentation — routed across multiple AI models for the best result.</p>
+          <div class="tags"><span class="tag">Multi-model</span><span class="tag">React</span><span class="tag">Firebase</span></div>
+          <div class="card-links">
+            <a class="card-link" href="/deck-forge">Details <span class="arr">→</span></a>
+            <a class="card-link subtle" href="https://deck-forge-anil.web.app" target="_blank" rel="noopener">Open app <span class="arr">↗</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-title">About</div>
+        <div class="sec-count">BENCH NOTES</div>
+      </div>
+      <div class="about">
+        <div>
+          <p><strong>Jacob Labs is a team</strong> — young and experienced builders working side by side — energized by what AI now makes possible.</p>
+          <p>We build tools that make people more productive, and put real capability in the hands of the builders coming next.</p>
+          <p>And we go where technology hasn't: industries that have been overlooked and underserved — the ones still waiting for tools built for how they actually work.</p>
+        </div>
+        <div class="about-meta">
+          <div>Stack <span>Go · React · Firebase</span></div>
+          <div>Approach <span>Build–verify–ship</span></div>
+          <div>Code <span>github.com/aniljacobv-lab</span></div>
+          <div>Based <span>Houston, TX</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="updates">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-title">Updates</div>
+        <div class="sec-count">CHANGELOG</div>
+      </div>
+      <div class="timeline">
+        <div class="entry reveal">
+          <div class="date">2026 · Q2</div>
+          <h4>Site rebuilt <span class="pill">SITE</span></h4>
+          <p>New homepage, per-product pages, light/dark themes, and a one-command deploy pipeline.</p>
+        </div>
+        <div class="entry reveal">
+          <div class="date">2026 · Q2</div>
+          <h4>Deck Forge goes live <span class="pill">DECK FORGE</span></h4>
+          <p>Multi-model presentation generation with sourced content shipped to production.</p>
+        </div>
+        <div class="entry reveal">
+          <div class="date">2026 · Q1</div>
+          <h4>Signal Forge in production <span class="pill">SIGNAL FORGE</span></h4>
+          <p>Unified WhatsApp, email, and voice-note capture with Whisper transcription, now live.</p>
+        </div>
+        <div class="entry reveal">
+          <div class="date">2025 · Q4</div>
+          <h4>SparkTakeoff public beta <span class="pill">SPARKTAKEOFF</span></h4>
+          <p>AI electrical estimating against NEC 2023, running entirely in the browser.</p>
+        </div>
+        <div class="entry reveal">
+          <div class="date">2025</div>
+          <h4>Centauri open-sourced <span class="pill">CENTAURI</span></h4>
+          <p>A SQL engine and the CeQL query language, developed in the open on GitHub.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-title">Contact</div>
+        <div class="sec-count">SAY HELLO</div>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <p class="muted" style="font-size:15.5px;margin-bottom:16px">Have a project, a question, or want to work together? Send a note — it goes straight to the bench.</p>
+          <div class="about-meta">
+            <div>Email <span>aniljacobv@gmail.com</span></div>
+            <div>GitHub <span>github.com/aniljacobv-lab</span></div>
+            <div>Based <span>Houston, TX</span></div>
+          </div>
+        </div>
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <div class="form-msg" id="formMsg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-mark">JACOB LABS</div>
+    <div class="foot-links">
+      <a href="mailto:aniljacobv@gmail.com">email</a>
+      <a href="https://github.com/aniljacobv-lab" target="_blank" rel="noopener">github</a>
+    </div>
+    <div class="foot-copy">© <span id="yr"></span> Jacob Labs · Johan Jacob. Independent software.</div>
+  </div>
+</footer>
+
+<script src="/assets/main.js" defer></script>
+</body>
+</html>

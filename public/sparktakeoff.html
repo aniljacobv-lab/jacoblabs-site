@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SparkTakeoff — Jacob Labs</title>
+<meta name="description" content="SparkTakeoff is AI-assisted electrical estimating: upload a plan set, auto-detect components, and price against NEC 2023 in the browser." />
+<meta name="theme-color" content="#080b12" />
+<link rel="canonical" href="https://jacoblabs-site.web.app/sparktakeoff" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Jacob Labs" />
+<meta property="og:title" content="SparkTakeoff — Jacob Labs" />
+<meta property="og:description" content="SparkTakeoff is AI-assisted electrical estimating: upload a plan set, auto-detect components, and price against NEC 2023 in the browser." />
+<meta property="og:url" content="https://jacoblabs-site.web.app/sparktakeoff" />
+<meta property="og:image" content="https://jacoblabs-site.web.app/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SparkTakeoff — Jacob Labs" />
+<meta name="twitter:description" content="SparkTakeoff is AI-assisted electrical estimating: upload a plan set, auto-detect components, and price against NEC 2023 in the browser." />
+<meta name="twitter:image" content="https://jacoblabs-site.web.app/og-image.png" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<nav>
+  <div class="wrap nav-inner">
+    <a class="mark" href="/">
+      <svg class="orb" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="2.4" fill="#f2b45c"/>
+        <ellipse cx="12" cy="12" rx="10" ry="4.4" stroke="#f2b45c" stroke-opacity="0.45" transform="rotate(28 12 12)"/>
+        <circle cx="20.4" cy="8.6" r="1.3" fill="#f2b45c"/>
+      </svg>
+      JACOB LABS
+    </a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/#products">products</a>
+        <a href="/#about">about</a>
+        <a href="/#updates">updates</a>
+        <a href="/#contact">contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light / dark theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="detail-hero">
+  <div class="wrap">
+    <a class="back-link" href="/#products"><span>&larr;</span> All products</a>
+    <span class="status live"><span class="dot"></span>LIVE · BETA</span>
+    <h1>SparkTakeoff</h1>
+    <p class="detail-lede">AI-assisted electrical estimating. Upload a plan set, auto-detect components, and price the job against NEC 2023 — right in the browser.</p>
+    <a class="btn btn-primary" href="https://sparktakeoff-anil.web.app" target="_blank" rel="noopener">Open the app ↗</a>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="padding-top:8px">
+    <div class="wrap">
+      <div class="detail-body">
+        <div class="reveal">
+          <h2>The problem</h2>
+          <p>Electrical takeoffs are slow, manual, and error-prone — counting symbols across dozens of plan sheets, then pricing each one by hand. SparkTakeoff compresses that into an upload-and-review workflow.</p>
+          <h2>How it works</h2>
+          <p>Drop in a plan set and the app detects components automatically, then prices the job against NEC 2023 requirements. Everything runs in the browser as a PWA, so estimators can use it on-site without installing anything.</p>
+          <h2>What it does</h2>
+          <ul class="feature-list">
+        <li>Upload a plan set and auto-detect electrical components</li>
+        <li>Price the job against NEC 2023 codes</li>
+        <li>Runs in the browser as an installable PWA</li>
+        <li>Built for estimators in the field, not just the office</li>
+          </ul>
+        </div>
+        <aside class="side-card reveal">
+          <div class="meta-row">Status <span>Live (beta)</span></div>
+          <div class="meta-row">Type <span>Web app / PWA</span></div>
+          <div class="meta-row">Stack <span>React · Firebase</span></div>
+          <div class="meta-row">Standard <span>NEC 2023</span></div>
+          <div class="meta-row">Domain <span>Electrical trades</span></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-mark">JACOB LABS</div>
+    <div class="foot-links">
+      <a href="mailto:aniljacobv@gmail.com">email</a>
+      <a href="https://github.com/aniljacobv-lab" target="_blank" rel="noopener">github</a>
+    </div>
+    <div class="foot-copy">&copy; <span id="yr"></span> Jacob Labs &middot; Johan Jacob. Independent software.</div>
+  </div>
+</footer>
+<script src="/assets/main.js" defer></script>
+</body>
+</html>

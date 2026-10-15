@@ -54,3 +54,12 @@ EDITS
   - Add/remove a product on the home page = copy one <article class="card"> block.
   - Add a product detail page = copy an existing one (e.g. centauri.html) and edit.
   - Add a changelog entry = copy a <div class="entry"> block in index.html.
+
+FAIR2 INTERACTIVE DEMO
+  Source: public/fair2/
+  Guide: docs/FAIR2.md
+  Tests: npm test
+  Structural checks: npm run check
+  Hosting path after deployment: /fair2/
+  Includes all application code; no ChatGPT login or build step required.
+  Bookings, payments, emergency alerts and driver approvals are simulations.

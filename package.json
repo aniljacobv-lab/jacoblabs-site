@@ -1,0 +1,13 @@
+{
+  "name": "jacoblabs-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Jacob Labs website and Fair2 interactive demo",
+  "scripts": {
+    "test": "node --test tests/fair2/*.test.cjs",
+    "check": "node scripts/check-fair2.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
